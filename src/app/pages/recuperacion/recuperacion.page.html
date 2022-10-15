@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="white">
+    <ion-icon slot="end" style="width:80px;height: 35px;"name="alert-circle-outline"></ion-icon>
+    <ion-buttons slot="start">
+      <ion-back-button text="Volver" mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Duoc UC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-img class="logo" src="assets/icon/duoc.png"></ion-img>
+
+  <ion-text color="primary" class="ion-text-center">
+    <h4 id="inicio">Recuperar contraseña</h4>
+  </ion-text>
+
+  <form>
+    <ion-item>
+      <ion-label color="dark" position="floating">Usuario</ion-label>
+      <ion-input required type="text" name="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="dark" position="floating">Contraseña</ion-label>
+      <ion-input required type="password" name="pass"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="dark" position="floating">Confirmar contraseña</ion-label>
+      <ion-input required type="password" name="pass"></ion-input>
+    </ion-item>
+    <ion-button id="recuperar"expand="full" color="success"
+      type="submit" routerLink="/login" class="ion-margin-top">
+      Recuperar contraseña
+    </ion-button>
+  </form>
+</ion-content>

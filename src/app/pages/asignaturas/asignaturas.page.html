@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-icon slot="start" name="menu" size="large" class="ion-padding" (click)="verMenu()"></ion-icon>
+    <ion-icon slot="end" style="width:80px;height: 35px;" name="book-outline"></ion-icon>
+    <ion-title>Asignaturas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-text class="ion-text-center">
+    <h1>
+      Seleccione sus asignaturas 
+    </h1>
+  </ion-text>
+
+  <ion-item class="ion-padding">
+    <div style="margin:0 auto;">
+      <ion-card style="width:300px;">
+        <ion-card-header>
+          <ion-text color="dark" class="ion-text-center">
+            <h4>Base de datos</h4>
+            <ion-img class="base" src="assets/icon/base.png"></ion-img>
+          </ion-text>
+          <ion-button class="boton" fill="outline" color="success"  routerLink="/base">Asistencia</ion-button>
+        </ion-card-header> 
+        <ion-card-content>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-item>
+
+  <ion-item class="ion-padding">
+    <div style="margin:0 auto;">
+      <ion-card style="width:300px;">
+        <ion-card-header>
+          <ion-text color="dark" class="ion-text-center">
+            <h4>Inglés</h4>
+            <ion-img class="ingles" src="assets/icon/ingles.png"></ion-img>
+          </ion-text>
+          <ion-button class="boton" fill="outline" color="success"  routerLink="/ingles">Asistencia</ion-button>
+        </ion-card-header> 
+        <ion-card-content>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-item>
+  <ion-item class="ion-padding">
+    <div style="margin:0 auto;">
+      <ion-card style="width:300px;">
+        <ion-card-header>
+          <ion-text color="dark" class="ion-text-center">
+            <h4>Programacion</h4>
+            <ion-img class="programacion" src="assets/icon/programacion.png"></ion-img>
+          </ion-text>
+          <ion-button class="boton" fill="outline" color="success"  routerLink="/programacion">Asistencia</ion-button>
+        </ion-card-header> 
+        <ion-card-content>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-item>
+</ion-content>

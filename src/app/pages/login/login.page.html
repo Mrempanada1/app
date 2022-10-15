@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="white">
+    <ion-icon slot="start" name="person" size="large" class="ion-padding"></ion-icon>
+    <ion-title>Duoc UC</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-img class="logo" src="assets/icon/duoc.png"></ion-img>
+
+  <ion-text color="primary" class="ion-text-center">
+    <h4 id="inicio">Inicio de Sesión</h4>
+  </ion-text>
+  <form #form="ngForm" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input id="user" required type="text" name="nombre" [(ngModel)]="usuario.username" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input id="user"required type="password" name="pass" [(ngModel)]="usuario.password" ></ion-input>
+    </ion-item>
+    <ion-button id="login"expand="Block" color="primary"
+      type="submit" [disabled]="form.invalid" class="ion-margin-top">
+      Login
+    </ion-button> 
+  </form>
+  <ion-button id="cuenta" expand="slot" color="primary" class="ion-text-center" routerLink="/recuperacion">
+    <p>¿Olvidaste tu contraseña?</p>
+  </ion-button>
+  <ion-button id="cuenta" expand="slot" color="primary" class="ion-text-center" routerLink="/register">
+    <p>Crear cuenta</p>
+  </ion-button>
+</ion-content>

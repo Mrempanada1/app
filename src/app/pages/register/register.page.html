@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="white">
+    <ion-buttons slot="start">
+      <ion-back-button text="Volver" mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-img class="logo" src="assets/icon/duoc.png"></ion-img>
+  <ion-text color="primary" class="ion-text-center">
+    <h4>Crear Cuenta</h4>
+  </ion-text>
+  <form #form="ngForm" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Usuario</ion-label>
+      <ion-input required type="text" name="usrname" [(ngModel)]="usuario.username" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input required type="password" name="pass" [(ngModel)]="usuario.password" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input type="email" name="mail" [(ngModel)]="usuario.correo" required></ion-input>
+    </ion-item>
+    <ion-button id="crear" expand="full" color="success"
+      type="submit" [disabled]="form.invalid" class="ion-margin-top" routerLink="/login">
+      Crear cuenta
+    </ion-button>
+  </form>
+</ion-content>
