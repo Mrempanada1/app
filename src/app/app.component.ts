@@ -9,7 +9,7 @@ import { Camera, CameraOptions } from '@awesome-cordova-plugins/camera/ngx';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor(private storage:Storage,private menu:MenuController) {}
+  constructor(private storage:Storage,private menu:MenuController, private camera: Camera) {}
   async ngOnInit() {
     // If using a custom driver:
     //await this.storage.defineDriver(MyCustomDriver)
